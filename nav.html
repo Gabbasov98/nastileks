@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Подкатегории
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина/оформление
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Статьи
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Конкретная статья
+        </a>
+        <a href="projects.html" style="display: block; margin-bottom: 20px;">
+            Объекты
+        </a>
+        <a href="project-item.html" style="display: block; margin-bottom: 20px;">
+            Объект
+        </a>
+        <a href="produce.html" style="display: block; margin-bottom: 20px;">
+            Производство
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранное
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Поиск
+        </a>
+        <a href="compare.html" style="display: block; margin-bottom: 20px;">
+            Сравнение
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оставьте контакты
+        </button>
+        <button data-modal="reqModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оставьте заявку
+        </button>
+        <button data-modal="askModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Задайте вопрос
+        </button>
+        <button data-modal="contactModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Контактные данные
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog m-card">
+            <form class="cart-form cart-form--type2">
+                <div class="h2 caps-text bold-text text-center">
+                    Оставьте ваши контакты
+                </div>
+                <div class="_mt10 text-center">
+                    <div class="text16 text14-tablet gray-text3">
+                        Менеджер свяжется с вами  <br>
+                    в течении 10 минут
+                    </div>
+                </div>
+                <div class="cart-form__grid">
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="cart-form__bottom">
+                    <div class="cart-form__checks">
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на получение информационной и рекламной рассылки</span>
+                            </label>
+                        </div>
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на обработку персональных данных в соответствии с Политикой обработки персональных данных</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="cart-form__btn m-btn m-btn--small m-btn-red">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog m-card">
+            <form class="cart-form cart-form--type3">
+                <div class="h2 caps-text bold-text text-center">
+                    Оставьте заявку
+                </div>
+                <div class="_mt10 text-center">
+                    <div class="text16 text14-tablet gray-text3">
+                        Менеджер свяжется с вами  <br>
+                    в течении 10 минут
+                    </div>
+                </div>
+                <div class="cart-form__grid">
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="filter-group__check _big">
+                        <input type="checkbox">
+                        <label>
+                            <span class="text14">Даю Согласие на обработку персональных данных в соответствии с Политикой обработки персональных данных</span>
+                        </label>
+                    </div>
+                    <div class="filter-group__check _big">
+                        <input type="checkbox">
+                        <label>
+                            <span class="text14">Даю Согласие на получение информационной и рекламной рассылки</span>
+                        </label>
+                    </div>
+                    <button class="cart-form__btn m-btn m-btn--small m-btn-red">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+                <div class="cart-form__bottom">
+
+                </div>
+
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="askModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog m-card">
+            <form class="cart-form cart-form--type2">
+                <div class="h2 caps-text bold-text">
+                    Задайте интересующий вас вопрос
+                </div>
+                <div class="cart-form__grid">
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="cart-form__textarea fg fg--gray">
+                        <textarea placeholder="Вопрос"></textarea>
+                    </div>
+                </div>
+                <div class="cart-form__bottom">
+                    <div class="cart-form__checks">
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на получение информационной и рекламной рассылки</span>
+                            </label>
+                        </div>
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на обработку персональных данных в соответствии с Политикой обработки персональных данных</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="cart-form__btn m-btn m-btn--small m-btn-red">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="contactModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog m-card">
+            <form class="cart-form">
+                <div class="h2 caps-text bold-text">
+                    Контактные данные
+                </div>
+                <div class="cart-form__grid">
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="fg fg--gray _required">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="cart-form__textarea fg fg--gray">
+                        <textarea placeholder="Комментарий"></textarea>
+                    </div>
+                </div>
+                <div class="cart-form__bottom">
+                    <div class="cart-form__checks">
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на получение информационной и рекламной рассылки</span>
+                            </label>
+                        </div>
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Даю Согласие на обработку персональных данных в соответствии с Политикой обработки персональных данных</span>
+                            </label>
+                        </div>
+                        <div class="filter-group__check _big">
+                            <input type="checkbox">
+                            <label>
+                                <span class="text14">Принимаю условия Оферты</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="cart-form__btn m-btn m-btn--small m-btn-red">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
